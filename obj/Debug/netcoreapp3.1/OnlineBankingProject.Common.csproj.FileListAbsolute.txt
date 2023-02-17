@@ -1,0 +1,5 @@
+C:\Users\nishriddick.NORTHAMERICA\source\repos\BankingProject\obj\Debug\netcoreapp3.1\OnlineBankingProject.Common.csproj.AssemblyReference.cache
+C:\Users\nishriddick.NORTHAMERICA\source\repos\BankingProject\obj\Debug\netcoreapp3.1\OnlineBankingProject.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nishriddick.NORTHAMERICA\source\repos\BankingProject\obj\Debug\netcoreapp3.1\OnlineBankingProject.Common.AssemblyInfoInputs.cache
+C:\Users\nishriddick.NORTHAMERICA\source\repos\BankingProject\obj\Debug\netcoreapp3.1\OnlineBankingProject.Common.AssemblyInfo.cs
+C:\Users\nishriddick.NORTHAMERICA\source\repos\BankingProject\obj\Debug\netcoreapp3.1\OnlineBankingProject.Common.csproj.CoreCompileInputs.cache

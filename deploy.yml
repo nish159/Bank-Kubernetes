@@ -1,0 +1,81 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: azure-bank-back
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: azure-bank-back
+  template:
+    metadata:
+      labels:
+        app: azure-bank-back
+    spec:
+      nodeSelector:
+        "beta.kubernetes.io/os": linux
+      containers:
+      - name: azure-bank-back
+        image: mcr.microsoft.com/oss/bitnami/redis:6.0.8
+        env:
+        - name: ALLOW_EMPTY_PASSWORD
+          value: "yes"
+        ports:
+        - containerPort: 6379
+          name: redis
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: azure-bank-back
+spec:
+  ports:
+  - port: 6379
+  selector:
+    app: azure-bank-back
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: azure-bank-front
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: azure-bank-front
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  minReadySeconds: 5 
+  template:
+    metadata:
+      labels:
+        app: azure-bank-front
+    spec:
+      nodeSelector:
+        "beta.kubernetes.io/os": linux
+      containers:
+      - name: azure-bank-front
+        image:  bankazurecontainer.azurecr.io/bank-app:v1
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            cpu: 250m
+          limits:
+            cpu: 500m
+        env:
+        - name: REDIS
+          value: "azure-bank-back"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: azure-bank-front
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
+    app: azure-bank-front

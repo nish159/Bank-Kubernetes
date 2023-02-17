@@ -1,0 +1,97 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\nishriddick.NORTHAMERICA\\source\\BankingProject\\OnlineBankingProject.Common\\OnlineBankingProject.Common.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\nishriddick.NORTHAMERICA\\source\\BankingProject\\OnlineBankingProject.Common\\OnlineBankingProject.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\nishriddick.NORTHAMERICA\\source\\BankingProject\\OnlineBankingProject.Common\\OnlineBankingProject.Common.csproj",
+        "projectName": "OnlineBankingProject.Common",
+        "projectPath": "C:\\Users\\nishriddick.NORTHAMERICA\\source\\BankingProject\\OnlineBankingProject.Common\\OnlineBankingProject.Common.csproj",
+        "packagesPath": "C:\\Users\\nishriddick.NORTHAMERICA\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nishriddick.NORTHAMERICA\\source\\BankingProject\\OnlineBankingProject.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\nishriddick.NORTHAMERICA\\NuGet.Config",
+          "C:\\Users\\nishriddick.NORTHAMERICA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Cryptography.KeyDerivation": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Azure.Cosmos": {
+              "target": "Package",
+              "version": "[3.23.0, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.VisualStudio.Azure.Fabric.MSBuild": {
+              "target": "Package",
+              "version": "[1.7.6, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "System.Data.Common": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
